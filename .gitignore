@@ -2,3 +2,9 @@ django
 db.sqlite3
 */__pycache__
 */*/__pycache__
+key.txt
+.*
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

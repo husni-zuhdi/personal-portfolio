@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-%#ei288i+-x9r^^6xj9=-p*=p3et=07gzje^9i3^x66dr%m8(r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'personal-portofolio-env.eba-qbzzqqem.us-west-2.elasticbeanstalk.com', # CNAME to host in AWS Elastic Beanstalk
+]
 
 
 # Application definition
