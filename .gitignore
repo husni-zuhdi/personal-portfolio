@@ -1,8 +1,8 @@
-django
+django-env
 db.sqlite3
 */__pycache__
 */*/__pycache__
-key.txt
+.env
 .*
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
