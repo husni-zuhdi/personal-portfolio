@@ -28,7 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1',    # Localhost
-    'personal-portofolio-env.eba-qbzzqqem.us-west-2.elasticbeanstalk.com', # CNAME to host in AWS Elastic Beanstalk
+    'personal-portofolio-env.eba-ww74vmxa.us-west-2.elasticbeanstalk.com', # CNAME to host in AWS Elastic Beanstalk
 ]
 
 
