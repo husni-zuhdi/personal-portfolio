@@ -25,10 +25,10 @@ SECRET_KEY = str(config('DJANGO_SECRET_KEY'))
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+# DEBUG = False
 
 ALLOWED_HOSTS = [
     '127.0.0.1',    # Localhost
-    'personal-portfolio-env.eba-wsp7gmpx.ap-southeast-1.elasticbeanstalk.com', # CNAME to host in AWS Elastic Beanstalk
 ]
 
 
