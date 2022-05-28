@@ -1,6 +1,10 @@
+{% load static %}
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+<head>
+    <title>Husni Portfolio</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon/favicon.ico' %}" />
+</head>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
         <a class="navbar-brand" href="{% url 'project_index' %}">Husni Portfolio</a>
@@ -11,9 +15,6 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="{% url 'project_index' %}">Home</a>
-                </li>
             </ul>
         </div>
     </div>
