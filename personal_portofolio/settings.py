@@ -29,7 +29,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1',    # Localhost
-    'ec2-18-142-111-177.ap-southeast-1.compute.amazonaws.com'
+    # 'ec2-18-142-111-177.ap-southeast-1.compute.amazonaws.com'
 ]
 
 
@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'projects',
-    'blog',
+    # 'blog',
 ]
 
 MIDDLEWARE = [
