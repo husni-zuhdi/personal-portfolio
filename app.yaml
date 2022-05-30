@@ -1,0 +1,8 @@
+runtime: python38
+
+instance_class: F2
+
+env_variables:
+  APPENGINE_URL: https://personal-protfolio-dot-browsing-project-310703.uc.r.appspot.com
+
+service: personal-protfolio
