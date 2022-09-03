@@ -8,6 +8,8 @@ Here you can find my personal portfolio and profile website
 
 [2] [How to Deploy Django Applications on AWS EC2 Using Apache](https://medium.com/saarthi-ai/ec2apachedjango-838e3f6014ab)
 
+[3] [Accidently delete my sceret key in django](https://stackoverflow.com/questions/64094162/i-have-accidently-delete-my-sceret-key-form-settings-py-in-django)
+
 
 ## 🔰 Plan Phase 1
 1. Refactor the code base
