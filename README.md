@@ -15,7 +15,7 @@ Here you can find my personal portfolio and profile website
 3. Developing to use Google Compute Engine
 4. Apply [husni-portofolio.xyz](husni-portofolio.xyz) domain
 
-## How to use
+## 🤔 How to use
 I use Pipenv for environment and dependencies management for python. You can learn more about Pipenv in [here](https://pipenv.pypa.io/en/latest/)
 
 ```
