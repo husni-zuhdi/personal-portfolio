@@ -18,7 +18,13 @@ Here you can find my personal portfolio and profile website
 ## How to use
 I use Pipenv for environment and dependencies management for python. You can learn more about Pipenv in [here](https://pipenv.pypa.io/en/latest/)
 
-To install dependencies:
 ```
+# Install Dependencies
 pipenv install
+
+# Activate environment
+pipenv shell
+
+# Run Django Server
+python manage.py runserver
 ```
