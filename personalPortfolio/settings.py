@@ -22,11 +22,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Start Django-environ
 env = environ.Env(DEBUG=(bool, False))
+
+# Get .env file path
 env_file = os.path.join(BASE_DIR, ".env")
 
 # Use a local secret file, if provided
 if os.path.isfile(env_file):
     env.read_env(env_file)
+
 # Create local settings if running with CI, for unit testing
 elif os.getenv("TRAMPOLINE_CI", None):
     placeholder = (
@@ -54,8 +57,8 @@ else:
 SECRET_KEY = env("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
-DEBUG = False
+DEBUG = True
+# DEBUG = False
 
 APPENGINE_URL = env("APPENGINE_URL", default=None)
 if APPENGINE_URL:
@@ -160,7 +163,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/projects/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
