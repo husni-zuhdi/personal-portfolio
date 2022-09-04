@@ -29,26 +29,8 @@ env_file = os.path.join(BASE_DIR, ".env")
 # Use a local secret file, if provided
 if os.path.isfile(env_file):
     env.read_env(env_file)
-
-# Create local settings if running with CI, for unit testing
-elif os.getenv("TRAMPOLINE_CI", None):
-    placeholder = (
-        f"SECRET_KEY=a\n"
-        f"DATABASE_URL=sqlite://{os.path.join(BASE_DIR, 'db.sqlite3')}"
-    )
-    env.read_env(io.StringIO(placeholder))
-# elif os.environ.get("GOOGLE_CLOUD_PROJECT", None):
-#     # Pull secrets from Secret Manager
-#     project_id = os.environ.get("GOOGLE_CLOUD_PROJECT")
-
-#     client = secretmanager.SecretManagerServiceClient()
-#     settings_name = os.environ.get("SETTINGS_NAME", "django_settings")
-#     name = f"projects/{project_id}/secrets/{settings_name}/versions/latest"
-#     payload = client.access_secret_version(name=name).payload.data.decode("UTF-8")
-
-#     env.read_env(io.StringIO(payload))
 else:
-    raise Exception("No local .env or GOOGLE_CLOUD_PROJECT detected. No secrets found.")
+    raise Exception("No local .env detected. No secrets found.")
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
