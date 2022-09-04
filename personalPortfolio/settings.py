@@ -26,7 +26,7 @@ env = environ.Env(DEBUG=(bool, False))
 # Get .env file path
 env_file = os.path.join(BASE_DIR, ".env")
 
-# Use a local secret file, if provided
+# Use a local secret file
 if os.path.isfile(env_file):
     env.read_env(env_file)
 else:
@@ -40,20 +40,24 @@ SECRET_KEY = env("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-# DEBUG = False
 
-APPENGINE_URL = env("APPENGINE_URL", default=None)
-if APPENGINE_URL:
-    # Ensure a scheme is present in the URL before it's processed.
-    if not urlparse(APPENGINE_URL).scheme:
-        APPENGINE_URL = f"https://{APPENGINE_URL}"
+# Appengine Configuration
+# APPENGINE_URL = env("APPENGINE_URL", default=None)
+# if APPENGINE_URL:
+#     # Ensure a scheme is present in the URL before it's processed.
+#     if not urlparse(APPENGINE_URL).scheme:
+#         APPENGINE_URL = f"https://{APPENGINE_URL}"
 
-    ALLOWED_HOSTS = [urlparse(APPENGINE_URL).netloc]
-    CSRF_TRUSTED_ORIGINS = [APPENGINE_URL]
-    SECURE_SSL_REDIRECT = True
-else:
-    ALLOWED_HOSTS = ["*"]
+#     ALLOWED_HOSTS = [urlparse(APPENGINE_URL).netloc]
+#     CSRF_TRUSTED_ORIGINS = [APPENGINE_URL]
+#     SECURE_SSL_REDIRECT = True
+# else:
+#     ALLOWED_HOSTS = ["*"]
 
+# Allowed Host
+ALLOWED_HOSTS = [
+    "127.0.0.1", # For testing in local environment
+]
 
 # Application definition
 
@@ -133,7 +137,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Jakarta'
 
 USE_I18N = True
 
