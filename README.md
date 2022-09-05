@@ -21,6 +21,9 @@ Here you can find my personal portfolio and profile website
 I use Pipenv for environment and dependencies management for python. You can learn more about Pipenv in [here](https://pipenv.pypa.io/en/latest/)
 
 ```
+# Install pipenv
+pip install --user pipenv
+
 # Install Dependencies
 pipenv install
 
