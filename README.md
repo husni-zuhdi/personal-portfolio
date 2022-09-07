@@ -27,9 +27,23 @@ pip install --user pipenv
 # Install Dependencies
 pipenv install
 
-# Activate environment
-pipenv shell
-
-# Run Django Server
-python manage.py runserver
+# Run server in the pipenv environment
+pipenv run python manage.py runserver
 ```
+
+## 👷 How to use in production
+In production, there are a few more step to do. I'll keep you updated
+
+```
+# Install pipenv
+pip install --user pipenv
+
+# Install Dependencies
+pipenv install
+
+# Activate environment
+pipenv run gunicorn --bind 0.0.0.0:8000 personalPortfolio.wsgi
+```
+
+## TODO: Setup Gunicorn
+## TODO: Setup Nginx
