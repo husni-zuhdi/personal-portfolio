@@ -33,6 +33,11 @@ sudo su -
 cp config/nginx/personalportfolio /etc/nginx/sites-available/personalportfolio
 ln -s /etc/nginx/sites-available/personalportfolio /etc/nginx/sites-enabled/personalportfolio
 
+# Move default site to temp sites
+mkdir /etc/nginx/sites-available-backup
+rm /etc/nginx/sites-enabled/default
+mv /etc/nginx/sites-available-backup/default /etc/nginx/sites-available/default
+
 # Spin up nginx
 systemctl start nginx
 systemctl enable nginx
