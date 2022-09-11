@@ -2,15 +2,6 @@
 
 Here you can find my personal portfolio and profile website
 
-# 📖 References
-
-[1] [Get Started With Django Part 1: Build a Portfolio App](https://realpython.com/get-started-with-django-1/)
-
-[2] [How to Deploy Django Applications on AWS EC2 Using Apache](https://medium.com/saarthi-ai/ec2apachedjango-838e3f6014ab)
-
-[3] [Accidently delete my sceret key in django](https://stackoverflow.com/questions/64094162/i-have-accidently-delete-my-sceret-key-form-settings-py-in-django)
-
-
 ## 🔰 Plan Phase 1
 1. Refactor the code base
 2. Implement django framework to create a portfolio and profile website
@@ -47,3 +38,15 @@ pipenv run gunicorn --bind 0.0.0.0:8000 personalPortfolio.wsgi
 
 ## TODO: Setup Gunicorn
 ## TODO: Setup Nginx
+
+# 📖 References
+
+[1] [Get Started With Django Part 1: Build a Portfolio App](https://realpython.com/get-started-with-django-1/)
+
+[2] [How to Deploy Django Applications on AWS EC2 Using Apache](https://medium.com/saarthi-ai/ec2apachedjango-838e3f6014ab)
+
+[3] [Accidently delete my sceret key in django](https://stackoverflow.com/questions/64094162/i-have-accidently-delete-my-sceret-key-form-settings-py-in-django)
+
+[4] [Securely Deploy a Django App With Gunicorn, Nginx, & HTTPS](https://realpython.com/django-nginx-gunicorn/)
+
+[5] [How to Check the User Group(s) an Ubuntu User Belongs To](https://vitux.com/how-to-check-the-user-groups-an-ubuntu-user-belongs-to/)
