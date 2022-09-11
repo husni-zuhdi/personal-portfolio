@@ -33,10 +33,45 @@ pip install --user pipenv
 pipenv install
 
 # Activate environment
-pipenv run gunicorn --bind 0.0.0.0:8000 personalPortfolio.wsgi
+pipenv run gunicorn -c config/gunicorn/dev.py
 ```
 
-## TODO: Setup Gunicorn
+## 🦄 Setup Gunicorn
+
+The gunicorn config is in [here](config/gunicorn/dev.py) and the initialize script is in [here](script/init.sh).
+
+In the initialize script, change your **USER_NAME** into the username that you used to run gunicorn app server. 
+
+Don't know your **USER_NAME**? Follow this step
+
+```
+# config/gunicorn/dev.py
+
+####################################################
+# To know your USER_NAME, comment bellow variables #
+# and run gunicorn.                                #
+####################################################
+# Write access and error info to /var/log
+# accesslog = errorlog = "/var/log/gunicorn/dev.log"
+# Redirect stdout/stderr to log file
+# capture_output = True
+# PID file so you can easily fetch process ID
+# pidfile = "/var/run/gunicorn/dev.pid"
+# Daemonize the Gunicorn process (detach & enter background)
+# daemon = True
+
+# Run gunicron
+pipenv run gunicorn -c config/gunicorn/dev.py
+
+# Check gunicorn process
+ps aux | grep gunicorn
+
+# You'll see something like this
+husnina+ ... /home/husninaufalz/.local/share/virtua...
+                   ^^^^^^^^^^^^
+                   This is your username
+```
+
 ## TODO: Setup Nginx
 
 # 📖 References

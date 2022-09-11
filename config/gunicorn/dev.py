@@ -10,6 +10,11 @@ workers = 2
 bind = "0.0.0.0:8000"
 # Restart workers when code changes (development only!)
 reload = True
+
+####################################################
+# To know your USER_NAME, comment bellow variables #
+# and run gunicorn.                                #
+####################################################
 # Write access and error info to /var/log
 accesslog = errorlog = "/var/log/gunicorn/dev.log"
 # Redirect stdout/stderr to log file
