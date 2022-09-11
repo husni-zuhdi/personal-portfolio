@@ -56,9 +56,9 @@ DEBUG = True
 
 # Allowed Host
 ALLOWED_HOSTS = [
-    "127.0.0.1", # For testing in local environment
+    # "127.0.0.1", # For testing in local environment
     "0.0.0.0",   # For testing also
-    "34.128.113.38", # Testing in GCE
+    # "34.128.113.38", # Testing in GCE
     ".husni-portofolio.xyz" # Testing my domain
 ]
 
@@ -153,8 +153,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = 'static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-# STATICFILES_DIRS = [BASE_DIR / 'static']
+STATIC_ROOT = "/var/www/husni-portofolio.xyz/static"
+STATICFILES_DIRS = [BASE_DIR / 'static']
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

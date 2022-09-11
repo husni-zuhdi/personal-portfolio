@@ -22,6 +22,10 @@ export USER_NAME=husninaufalz
 sudo mkdir -pv /var/{log,run}/gunicorn/
 sudo chown -cR $USER_NAME:ubuntu /var/{log,run}/gunicorn/
 
+# Create static folder and set ownership and group
+sudo mkdir -pv /var/www/husni-portofolio.xyz/static
+sudo chown -cR $USER_NAME:ubuntu /var/www/husni-portofolio.xyz/static
+
 # Log as super user
 sudo su -
 
