@@ -155,8 +155,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATIC_ROOT = "/var/www/husni-portofolio.xyz/static"
 STATICFILES_DIRS = [
-    BASE_DIR / 'static',
-    "/var/www/husni-portofolio.xyz/static",
+    BASE_DIR / 'projects/static',
     ]
 
 # Default primary key field type
