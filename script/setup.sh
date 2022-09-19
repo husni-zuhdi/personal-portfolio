@@ -16,11 +16,11 @@ pip install --user pipenv
 pipenv install
 
 # Declare your VM username
-export USER_NAME=husninaufalz
+export USER_NAME=$(whoami)
 
-# Create folder for log and run gunicorn and set ownership and group
-sudo mkdir -pv /var/{log,run}/gunicorn/
-sudo chown -cR $USER_NAME:ubuntu /var/{log,run}/gunicorn/
+# Create folder for log gunicorn and set ownership and group
+sudo mkdir -pv /var/log/gunicorn/
+sudo chown -cR $USER_NAME:ubuntu /var/log/gunicorn/
 
 # Create static folder and set ownership and group
 sudo mkdir -pv /var/www/husni-portofolio.xyz/static
@@ -44,6 +44,3 @@ systemctl enable nginx
 
 # Exit super user
 exit
-
-# Start gunicorn
-pipenv run gunicorn -c config/gunicorn/dev.py
