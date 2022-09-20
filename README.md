@@ -2,12 +2,6 @@
 
 Here you can find my personal portfolio and profile website
 
-## 🔰 Plan Phase 1
-1. Refactor the code base
-2. Implement django framework to create a portfolio and profile website
-3. Developing to use Google Compute Engine
-4. Apply [husni-portofolio.xyz](husni-portofolio.xyz) domain
-
 ## 🤔 How to use
 I use Pipenv for environment and dependencies management for python. You can learn more about Pipenv in [here](https://pipenv.pypa.io/en/latest/)
 
@@ -85,3 +79,5 @@ husnina+ ... /home/husninaufalz/.local/share/virtua...
 [4] [Securely Deploy a Django App With Gunicorn, Nginx, & HTTPS](https://realpython.com/django-nginx-gunicorn/)
 
 [5] [How to Check the User Group(s) an Ubuntu User Belongs To](https://vitux.com/how-to-check-the-user-groups-an-ubuntu-user-belongs-to/)
+
+[6] [Securely Deploy a Django App With Gunicorn, Nginx, & HTTPS](https://realpython.com/django-nginx-gunicorn/)
